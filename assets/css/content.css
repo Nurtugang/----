@@ -131,6 +131,7 @@
     border: 1px solid var(--border-color);
     height: fit-content;
     position: sticky;
+    overflow: hidden;
     top: 100px;
     transition: all 0.3s ease;
  }
