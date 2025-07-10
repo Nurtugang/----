@@ -29,7 +29,6 @@
     align-items: center;
     height: var(--header-height);
     position: relative;
-    padding: 0 1.5rem
 }
 
 /* Menu toggle button с современными эффектами */
