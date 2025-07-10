@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости - Shakarim University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+</head>
+<body>
+<!-- Оригинальная шапка сайта -->
+<header class="site-header">
+    <div class="header-container">
+        <!-- Menu toggle button (left) -->
+        <div class="menu-toggle-container">
+            <button id="menuToggle" class="menu-toggle">
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Logo (center) -->
+        <div class="logo-container">
+            <a href="#" class="logo">
+                <img src="assets/img/university.png" alt="Shakarim University Logo" class="logo-img">
+            </a>
+        </div>
+        
+        <!-- Search bar (right) + Language selector -->
+        <div class="search-container">
+            <form id="searchForm" action="" method="get">
+                <input type="text" name="s" placeholder="Поиск..." aria-label="Поиск">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div style="width:18px;"></div>
+            <div class="lang-selector">
+                <a href="#" class="lang-btn active">RU</a>
+                <div class="lang-dropdown">
+                    <a href="#" class="lang-btn">KZ</a>
+                    <a href="#" class="lang-btn">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main dropdown menu -->
+    <div id="mainMenu" class="main-menu">
+        <div class="menu-container">
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-university"></i> О нас</h3>
+                    <ul>
+                        <li><a href="#">Об университете</a></li>
+                        <li><a href="#">Наша история</a></li>
+                        <li><a href="#">Организационная структура</a></li>
+                        <li><a href="#">Руководство университета</a></li>
+                        <li><a href="#">Государственные закупки</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-user-graduate"></i> Поступление</h3>
+                    <ul>
+                        <li><a href="#">Абитуриентам</a></li>
+                        <li><a href="#">Как подать документы</a></li>
+                        <li><a href="#">Необходимые документы</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Важные даты</a></li>
+                        <li><a href="#">Для иностранных студентов</a></li>
+                        <li><a href="#">Финансовая помощь и стипендии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-graduation-cap"></i> Образование</h3>
+                    <ul>
+                        <li><a href="#">Высшие/Исследовательские школы</a></li>
+                        <li><a href="#">Образовательные программы</a></li>
+                        <li><a href="#">Международные программы</a></li>
+                        <li><a href="#">Академическая поддержка</a></li>
+                        <li><a href="#">Академический календарь</a></li>
+                        <li><a href="#">Студенты по обмену</a></li>
+                        <li><a href="#">Курсы для профессионалов</a></li>
+                        <li><a href="#">Университетский колледж</a></li>
+                        <li><a href="#">Shakarim High School</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-flask"></i> Исследования</h3>
+                    <ul>
+                        <li><a href="#">Научные центры</a></li>
+                        <li><a href="#">Научные проекты и новости</a></li>
+                        <li><a href="#">Научные мероприятия</a></li>
+                        <li><a href="#">Научные журналы</a></li>
+                        <li><a href="#">Студенческая наука</a></li>
+                        <li><a href="#">Научные государственные закупки</a></li>
+                        <li><a href="#">Маркет инноваций</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-handshake"></i> Сотрудничество</h3>
+                    <ul>
+                        <li><a href="#">Центр международного сотрудничества</a></li>
+                        <li><a href="#">Зарубежные партнеры</a></li>
+                        <li><a href="#">Отечественные партнеры</a></li>
+                        <li><a href="#">Карьерные возможности</a></li>
+                        <li><a href="#">Организации-партнеры по стажировкам</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-users"></i> Жизнь в кампусе</h3>
+                    <ul>
+                        <li><a href="#">Студенческая жизнь</a></li>
+                        <li><a href="#">Ресурсы и услуги кампуса</a></li>
+                        <li><a href="#">Shakarim TOP-100</a></li>
+                        <li><a href="#">Календарь событий</a></li>
+                        <li><a href="#">Выпускникам</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-award"></i> Советы и признание</h3>
+                    <ul>
+                        <li><a href="#">Ученый Совет университета</a></li>
+                        <li><a href="#">Научно – технический совет</a></li>
+                        <li><a href="#">Академический совет университета</a></li>
+                        <li><a href="#">Диссертационный совет</a></li>
+                        <li><a href="#">Соискатели ученых званий</a></li>
+                        <li><a href="#">Лучший преподаватель вуза</a></li>
+                        <li><a href="#">Совет молодых ученых</a></li>
+                        <li><a href="#">Аккредитация и рейтинги</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-camera"></i> Познакомьтесь с университетом</h3>
+                    <ul>
+                        <li><a href="https://tury.semgu.kz/7%20%d0%ba%d0%be%d1%80%d0%bf%d1%83%d1%81/">Виртуальный тур</a></li>
+                        <li><a href="#">Shakarim Museum</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="#">Новости университета</a></li>
+                        <li><a href="#">Брошюры и материалы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- HTML структура для замены существующей разметки -->
+<main class="page-wrapper">
+    <div class="content-container">
+        <!-- Новости вместо баннера -->
+        <div class="news-section">
+            <!-- Большая новость -->
+            <div class="news-item news-item-large">
+                <div class="news-image">
+                    <img src="assets/img/template.png" alt="Шәкәрім жоғары колледжі - өңірлік чемпионат үздіктерінің қатарында">
+                    <div class="news-overlay">
+                        <h2>ШӘКӘРІМ ЖОҒАРЫ КОЛЛЕДЖІ - ӨҢІРЛІК ЧЕМПИОНАТ ҮЗДІКТЕРІНІҢ ҚАТАРЫНДА</h2>
+                        <div class="news-date">21 май 2025</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Две меньшие новости -->
+            <div class="news-row">
+                <div class="news-item news-item-small">
+                    <div class="news-image">
+                        <img src="assets/img/building.webp" alt="В НАО «Шәкәрім университет» проходит специализированная">
+                        <div class="news-overlay">
+                            <h3>В НАО «Шәкәрім университет» проходит специализированная</h3>
+                            <div class="news-date">20 май 2025</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="news-item news-item-small">
+                    <div class="news-image">
+                        <img src="assets/img/university.png" alt="КУЛЬТУРНОЕ ПОЗНАНИЕ – ПРЕЕМСТВЕННОСТЬ НАУКИ И">
+                        <div class="news-overlay">
+                            <h3>КУЛЬТУРНОЕ ПОЗНАНИЕ – ПРЕЕМСТВЕННОСТЬ НАУКИ И</h3>
+                            <div class="news-date">19 май 2025</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основная сетка контента -->
+        <div class="content-grid">
+            <!-- Основной контент (теперь слева) -->
+            <div class="main-content">
+                <h1>Новости университета</h1>
+                <!-- Список новостей -->
+                <div class="news-list">
+                    <!-- Новость 1 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/template.png" alt="ШӘКӘРІМ ЖОҒАРЫ КОЛЛЕДЖІ">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">ШӘКӘРІМ ЖОҒАРЫ КОЛЛЕДЖІ - ӨҢІРЛІК ЧЕМПИОНАТ ҮЗДІКТЕРІНІҢ ҚАТАРЫНДА</a></h3>
+                            <div class="news-list-date">21 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 2 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/building.webp" alt="В НАО «Шәкәрім университет»">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">В НАО «Шәкәрім университет» проходит специализированная аккредитация</a></h3>
+                            <div class="news-list-date">20 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 3 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/university.png" alt="КУЛЬТУРНОЕ ПОЗНАНИЕ">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">КУЛЬТУРНОЕ ПОЗНАНИЕ – ПРЕЕМСТВЕННОСТЬ НАУКИ И ОБРАЗОВАНИЯ</a></h3>
+                            <div class="news-list-date">19 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 4 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/building.webp" alt="Научная конференция">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">Научная конференция по инновационным методам обучения</a></h3>
+                            <div class="news-list-date">18 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 5 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/template.png" alt="Международное сотрудничество">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">Международное сотрудничество: новые горизонты для студентов</a></h3>
+                            <div class="news-list-date">17 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 6 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/university.png" alt="Спортивные достижения">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">Спортивные достижения студентов на республиканских соревнованиях</a></h3>
+                            <div class="news-list-date">16 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 7 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/building.webp" alt="День открытых дверей">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">День открытых дверей для будущих абитуриентов</a></h3>
+                            <div class="news-list-date">15 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 8 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/template.png" alt="Новые образовательные программы">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">Новые образовательные программы для магистрантов</a></h3>
+                            <div class="news-list-date">14 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 9 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/university.png" alt="Студенческий форум">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">Студенческий форум «Молодёжь и наука»</a></h3>
+                            <div class="news-list-date">13 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Новость 10 -->
+                    <div class="news-list-item">
+                        <div class="news-list-image">
+                            <img src="assets/img/building.webp" alt="Встреча с работодателями">
+                        </div>
+                        <div class="news-list-content">
+                            <h3><a href="#">Встреча с работодателями: возможности для выпускников</a></h3>
+                            <div class="news-list-date">12 май 2025</div>
+                            <div class="news-list-excerpt">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Пагинация -->
+                <div class="pagination">
+                    <a href="#" class="prev-next"><i class="fas fa-chevron-left"></i></a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <a href="#">11</a>
+                    <a href="#">12</a>
+                    <a href="#" class="active">13</a>
+                    <a href="#">14</a>
+                    <a href="#">15</a>
+                    <a href="#">16</a>
+                    <a href="#">17</a>
+                    <a href="#" class="prev-next"><i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- Боковая навигация (теперь справа) -->
+            <aside class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="active">Все новости</a></li>
+                    <li><a href="#">Наука и исследования</a></li>
+                    <li><a href="#">Образование</a></li>
+                    <li><a href="#">Международные связи</a></li>
+                    <li><a href="#">Студенческая жизнь</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Культурные события</a></li>
+                    <li><a href="#">Объявления</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    
+    <!-- Секция видео -->
+    <div class="content-container">
+        <div class="video-section-block">
+            <div class="video-header">
+                <h2>Видео</h2>
+                <div class="video-nav">
+                    <button class="video-nav-btn prev">❮</button>
+                    <button class="video-nav-btn next">❯</button>
+                </div>
+            </div>
+            
+            <div class="video-grid-wrapper">
+                <div class="video-grid">
+                    <!-- Видео 1 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/template.png" alt="Видео 1">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>"Шәкәрім" университетінің ректоры Думан Орынбековпен сұхбат.</h3>
+                        <div class="video-date">24 февр. 2024</div>
+                    </div>
+                    
+                    <!-- Видео 2 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/building.webp" alt="Видео 2">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>РЕКТОР ВСТРЕТИЛСЯ С АБИТУРИЕНТАМИ</h3>
+                        <div class="video-date">19 июл. 2023</div>
+                    </div>
+                    
+                    <!-- Видео 3 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/university.png" alt="Видео 3">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>НЕДЕЛЯ НАУКИ В SHAKARIM UNIVERSITY</h3>
+                        <div class="video-date">18 апр. 2023</div>
+                    </div>
+                    
+                    <!-- Видео 4 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/template.png" alt="Видео 4">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>Университет имени Шакарима организовал пресс-тур для журналистов</h3>
+                        <div class="video-date">30 мар. 2023</div>
+                    </div>
+                    
+                    <!-- Видео 5 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/building.webp" alt="Видео 5">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>КЕЛЕСІ ЖЫЛҒА СӘТТІЛІК: БАУЫРЖАН ЕРДЕМБЕКОВ</h3>
+                        <div class="video-date">30 дек. 2022</div>
+                    </div>
+                    
+                    <!-- Видео 6 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/university.png" alt="Видео 6">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>«АВТОМАТИЗАЦИЯ И УПРАВЛЕНИЕ»: SHAKARIM UNIVERSITY</h3>
+                        <div class="video-date">11 нояб. 2022</div>
+                    </div>
+                    
+                    <!-- Видео 7 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/template.png" alt="Видео 7">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>ЕЛ ТІРЕГІ – ҰЛЫЛАР МЕКЕНІНІҢ ЖАЛЫНДЫ ЖАСТАРЫ!</h3>
+                        <div class="video-date">3 нояб. 2022</div>
+                    </div>
+                    
+                    <!-- Видео 8 -->
+                    <div class="video-item">
+                        <div class="video-thumbnail">
+                            <img src="assets/img/building.webp" alt="Видео 8">
+                            <div class="play-button"><i class="fas fa-play"></i></div>
+                        </div>
+                        <h3>НОВЫЕ ТЕХНОЛОГИИ В ВУЗЕ</h3>
+                        <div class="video-date">3 нояб. 2022</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- Футер с оригинальной структурой -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Первая колонка -->
+            <div class="footer-brand">
+                <h3>Нормативные документы</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Корпоративное управление</a></li>
+                    <li><a href="#">Корпоративные документы</a></li>
+                    <li><a href="#">Академическая политика</a></li>
+                    <li><a href="#">Внутренняя система качества</a></li>
+                    <li><a href="#">Утверждённые формы дипломов</a></li>
+                    <li><a href="#">Организация ветеранов</a></li>
+                    <li><a href="#">Ассоциация выпускников</a></li>
+                    <li><a href="#">Устойчивое развитие</a></li>
+                    <li><a href="#">Профсоюз</a></li>
+                    <li><a href="#">Университет без коррупции</a></li>
+                </ul>
+            </div>
+            
+            <!-- Вторая колонка -->
+            <div class="footer-section">
+                <h4>Полезные ссылки</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Minor</a></li>
+                    <li><a target="_blank" href="https://mooc.semgu.kz/">MOOC</a></li>
+                    <li><a href="#">Summer Semester</a></li>
+                    <li><a target="_blank" href="https://platonus.shakarim.kz/">Platonus</a></li>
+                    <li><a target="_blank" href="https://hub.shakarim.kz/">Shakarim Hub</a></li>
+                </ul>
+            </div>
+            
+            <!-- Третья колонка -->
+            <div class="footer-section">
+                <h4>Университет</h4>
+                <ul class="footer-links">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Руководство</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <!-- Четвертая колонка -->
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <ul class="footer-links">
+                    <li>г. Семей, ул. Глинки, 20А</li>
+                    <li>+7 (7222) 31-60-29</li>
+                    <li>info@shakarim.edu.kz</li>
+                    <li>Приемная: +7 (771) 365-46-25</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Shakarim University. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Мобильное меню backdrop -->
+<div class="mobile-menu-backdrop"></div>
+
+<script src="assets/js/base.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/news.js"></script>
+<!-- Аккордеон инициализируется в news.js -->
+</script>
+</body>
+</html>
