@@ -25,10 +25,7 @@
         <!-- Logo (center) -->
         <div class="logo-container">
             <a href="#" class="logo">
-                <div class="logo-content">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>SHAKARIM UNIVERSITY</span>
-                </div>
+                <img src="assets/img/university.png" alt="Shakarim University Logo" class="logo-img">
             </a>
         </div>
         
@@ -167,16 +164,15 @@
 </header>
 
 <!-- HTML структура для замены существующей разметки -->
-
 <main class="page-wrapper">
     <div class="content-container">
         <!-- Баннер страницы -->
         <div class="page-banner">
-            <img class="w-4/5 h-full object-cover object-center ml-auto" src="assets/img/building.webp" alt="banner">
-            <div class="short-gradient">
-                <div class="absolute">
-                    <h1 class="font-inter text-3xl md:text-4xl my-4">Университет туралы</h1>
-                    <p class="text-gray-200 text-base"></p>
+            <img src="http://c.shakarim.kz/img/building.webp" alt="Студенты в кампусе Shakarim University">
+            <div class="banner-overlay">
+                <div class="banner-content">
+                    <h1>Алмасу бағдарламасы бойынша студент</h1>
+                    <p>Ведущий центр образования и науки в регионе, открывающий двери в будущее.</p>
                 </div>
             </div>
         </div>
@@ -184,25 +180,80 @@
         <!-- Основная сетка контента -->
         <div class="content-grid">
             <!-- Боковая навигация -->
-            <div class="sidebar-nav animate-fade-in-up">
+            <aside class="sidebar-nav">
                 <ul>
-                    <li><a href="http://10.1.1.121/kk/page/universitet-turaly" class="bg-secondary text-white rounded-3xl">Университет туралы</a></li>
-                    <li><a href="http://10.1.1.121/kk/page/bizdin-tarixy">Біздің тарихы</a></li>
-                    <li><a href="http://10.1.1.121/kk/structure">Ұйымдық құрылым</a></li>
-                    <li><a href="http://10.1.1.121/kk/page">Басшылық</a></li>
-                    <li><a href="http://10.1.1.121/kk/page/memlekettik-satyp-alu">Мемлекеттік сатып алу</a></li>
-                    <li><a href="http://10.1.1.121/kk/page">Бос орындар</a></li>
-                    <li><a href="http://10.1.1.121/kk/page/bailanys">Байланыс</a></li>
+                    <!-- Обратите внимание на класс 'active' -->
+                    <li><a href="#" class="active">Университет туралы</a></li>
+                    <li><a href="#">Біздің тарихы</a></li>
+                    <li><a href="#">Ұйымдық құрылым</a></li>
+                    <li><a href="#">Басшылық</a></li>
+                    <li><a href="#">Мемлекеттік сатып алу</a></li>
+                    <li><a href="#">Бос орындар</a></li>
+                    <li><a href="#">Байланыс</a></li>
                 </ul>
-            </div>
+            </aside>
             
             <!-- Основной контент -->
-            <div class="main-content animate-fade-in-down">
-                <h1>Университет туралы</h1>
-                
-                <!-- Контент из админки остается без изменений -->
+            <div class="main-content">
+                <!-- Контент из админки теперь наполнен для примера -->
                 <div class="tiptap-content">
-                    <!-- Здесь весь существующий контент из .tiptap-content -->
+                    <p class="lead-paragraph">Shakarim University – это не просто учебное заведение, а динамично развивающаяся экосистема, где создаются инновации, рождаются идеи и формируются лидеры завтрашнего дня. Мы гордимся нашей богатой историей и смело смотрим в будущее.</p>
+                    
+                    <p>Наша миссия — предоставить качественное образование, доступное каждому, и проводить передовые научные исследования, которые вносят реальный вклад в развитие общества и экономики Казахстана. Мы стремимся создать поддерживающую и вдохновляющую среду для студентов, преподавателей и исследователей.</p>
+
+                    <!-- Блок с ключевыми показателями -->
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>12,000+</h3>
+                            <p>Студентов</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>200+</h3>
+                            <p>Образовательных программ</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Научных лабораторий</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>92%</h3>
+                            <p>Трудоустройство выпускников</p>
+                        </div>
+                    </div>
+
+                    <h2>Наша инфраструктура</h2>
+                    <p>Кампус университета — это современное пространство для учебы, жизни и творчества. В вашем распоряжении новейшие лаборатории, богатая библиотека, уютные общежития и спортивные комплексы.</p>
+
+                    <!-- Галерея изображений -->
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop" alt="Учебный корпус">
+                        <img src="https://images.unsplash.com/photo-1571260899052-7c23a25ebc3f?q=80&w=2070&auto=format&fit=crop" alt="Библиотека">
+                        <img src="https://images.unsplash.com/photo-1627556704290-2b1b58535328?q=80&w=1932&auto=format&fit=crop" alt="Научная лаборатория">
+                    </div>
+
+                    <h2>Часто задаваемые вопросы</h2>
+                    
+                    <!-- Аккордеон -->
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                <span>Какие документы нужны для поступления?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Для поступления вам потребуется удостоверение личности, аттестат о среднем образовании, сертификат ЕНТ, 6 фотографий 3х4, а также медицинская справка формы 086-У. Полный список и требования доступны в разделе "Поступление".</p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button">
+                                <span>Предоставляет ли университет общежитие?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <p>Да, Shakarim University располагает современными и комфортабельными общежитиями для иногородних студентов. Места предоставляются на конкурсной основе. Подробную информацию о подаче заявления можно найти на странице "Студенческая жизнь".</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -279,5 +330,24 @@
 <script src="assets/js/index.js"></script>
 <script src="assets/js/header.js"></script>
 <script src="assets/js/content.js"></script>
+<script>
+// Простой скрипт для работы аккордеона
+document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling;
+        button.classList.toggle('active');
+
+        if (button.classList.contains('active')) {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            accordionContent.style.paddingTop = '1.5rem';
+            accordionContent.style.paddingBottom = '1.5rem';
+        } else {
+            accordionContent.style.maxHeight = '0';
+            accordionContent.style.paddingTop = '0';
+            accordionContent.style.paddingBottom = '0';
+        } 
+    });
+});
+</script>
 </body>
 </html>
