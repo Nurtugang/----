@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shakarim University - Современное образование</title>
+    <title>Shakarim University - Молодые ученые на стажировке в Германии</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/content.css">
+    <link rel="stylesheet" href="assets/css/newspage.css">
 </head>
 <body>
 <!-- Оригинальная шапка сайта -->
@@ -163,98 +163,53 @@
     </div>
 </header>
 
-<!-- HTML структура для замены существующей разметки -->
+<!-- HTML структура страницы новости -->
 <main class="page-wrapper">
     <div class="content-container">
-        <!-- Баннер страницы -->
-        <div class="page-banner">
-            <img src="http://c.shakarim.kz/img/building.webp" alt="Студенты в кампусе Shakarim University">
-            <div class="banner-overlay">
-                <div class="banner-content">
-                    <h1>Алмасу бағдарламасы бойынша студент</h1>
-                    <p>Ведущий центр образования и науки в регионе, открывающий двери в будущее.</p>
-                </div>
-            </div>
+        <!-- Фото новости вместо баннера -->
+        <div class="news-featured-image">
+            <img src="assets/img/template.png" alt="Молодые ученые Shakarim University на стажировке в Германии">
         </div>
 
-        <!-- Основная сетка контента -->
-        <div class="content-grid">
-            <!-- Боковая навигация -->
-            <aside class="sidebar-nav">
-                <ul>
-                    <!-- Обратите внимание на класс 'active' -->
-                    <li><a href="#" class="active">Университет туралы</a></li>
-                    <li><a href="#">Біздің тарихы</a></li>
-                    <li><a href="#">Ұйымдық құрылым</a></li>
-                    <li><a href="#">Басшылық</a></li>
-                    <li><a href="#">Мемлекеттік сатып алу</a></li>
-                    <li><a href="#">Бос орындар</a></li>
-                    <li><a href="#">Байланыс</a></li>
-                </ul>
-            </aside>
-            
-            <!-- Основной контент -->
-            <div class="main-content">
-                <!-- Контент из админки теперь наполнен для примера -->
-                <div class="tiptap-content">
-                    <p class="lead-paragraph">Shakarim University – это не просто учебное заведение, а динамично развивающаяся экосистема, где создаются инновации, рождаются идеи и формируются лидеры завтрашнего дня. Мы гордимся нашей богатой историей и смело смотрим в будущее.</p>
-                    
-                    <p>Наша миссия — предоставить качественное образование, доступное каждому, и проводить передовые научные исследования, которые вносят реальный вклад в развитие общества и экономики Казахстана. Мы стремимся создать поддерживающую и вдохновляющую среду для студентов, преподавателей и исследователей.</p>
-
-                    <!-- Блок с ключевыми показателями -->
-                    <div class="stats-grid">
-                        <div class="stat-item">
-                            <h3>12,000+</h3>
-                            <p>Студентов</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>200+</h3>
-                            <p>Образовательных программ</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>50+</h3>
-                            <p>Научных лабораторий</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>92%</h3>
-                            <p>Трудоустройство выпускников</p>
-                        </div>
-                    </div>
-
-                    <h2>Наша инфраструктура</h2>
-                    <p>Кампус университета — это современное пространство для учебы, жизни и творчества. В вашем распоряжении новейшие лаборатории, богатая библиотека, уютные общежития и спортивные комплексы.</p>
-
-                    <!-- Галерея изображений -->
-                    <div class="image-gallery">
-                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop" alt="Учебный корпус">
-                        <img src="https://images.unsplash.com/photo-1571260899052-7c23a25ebc3f?q=80&w=2070&auto=format&fit=crop" alt="Библиотека">
-                        <img src="https://images.unsplash.com/photo-1627556704290-2b1b58535328?q=80&w=1932&auto=format&fit=crop" alt="Научная лаборатория">
-                    </div>
-
-                    <h2>Часто задаваемые вопросы</h2>
-                    
-                    <!-- Аккордеон -->
-                    <div class="accordion-container">
-                        <div class="accordion-item">
-                            <button class="accordion-button">
-                                <span>Какие документы нужны для поступления?</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="accordion-content">
-                                <p>Для поступления вам потребуется удостоверение личности, аттестат о среднем образовании, сертификат ЕНТ, 6 фотографий 3х4, а также медицинская справка формы 086-У. Полный список и требования доступны в разделе "Поступление".</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <button class="accordion-button">
-                                <span>Предоставляет ли университет общежитие?</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="accordion-content">
-                                <p>Да, Shakarim University располагает современными и комфортабельными общежитиями для иногородних студентов. Места предоставляются на конкурсной основе. Подробную информацию о подаче заявления можно найти на странице "Студенческая жизнь".</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Основной контент новости -->
+        <div class="article-wrapper">
+            <div class="article-meta">
+                <div class="article-author">
+                    <i class="fas fa-user"></i>
+                    <span>Пресс-служба</span>
                 </div>
+                <div class="article-date">
+                    <i class="far fa-calendar-alt"></i>
+                    <span>9 июля 2025</span>
+                </div>
+                <div class="article-category">
+                    <i class="fas fa-tag"></i>
+                    <span>Наука</span>
+                </div>
+            </div>
+            
+            <h1 class="article-title">Молодые ученые Shakarim University проходят стажировку в Германии по направлению устойчивого развития</h1>
+            
+            <div class="article-divider"></div>
+            
+            <div class="article-content">
+                <p>В Посольстве Республики Казахстан в Германии состоялась встреча с 27 молодыми казахстанскими учеными, проходящими научную стажировку по стипендиальной программе «500 ученых на стажировку» в рамках программы «Болашак».</p>
+                
+                <p>Среди стажирующихся по данной программе есть представители Shakarim University:</p>
+                
+                <ol>
+                    <li>Нургалиев Нуржан Нурлыбекович, PhD, ассоциированный профессор кафедры «Химия и экология»;</li>
+                    <li>Бликс Айгерим Амантаевна, преподаватель кафедры «Химия и экология».</li>
+                </ol>
+                
+                <p>Научное направление стажировки – «Зеленые технологии и устойчивое развитие», посвященное экологическим проблемам и инновационным решениям, которые особенно актуальны в современном мире.</p>
+                
+                <p>Программа позволяет казахстанским ученым развиваться профессионально, накапливать зарубежный опыт, проводить научные исследования, а также внедрять устойчивое развитие и экологически чистые технологии в Казахстане. Такие международные стажировки не только повышают научный потенциал Shakarim University, но и вносят вклад в устойчивое развитие страны и продвижение знаний и науки в глобальном пространстве.</p>
+                
+                <blockquote>
+                    <p>Я считаю, что в сфере образования должно преподаваться «образование совести».</p>
+                    <cite>Шакарим Кудайбердиев</cite>
+                </blockquote>
             </div>
         </div>
     </div>
@@ -329,25 +284,6 @@
 <script src="assets/js/base.js"></script>
 <script src="assets/js/index.js"></script>
 <script src="assets/js/header.js"></script>
-<script src="assets/js/content.js"></script>
-<script>
-// Простой скрипт для работы аккордеона
-document.querySelectorAll('.accordion-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const accordionContent = button.nextElementSibling;
-        button.classList.toggle('active');
-
-        if (button.classList.contains('active')) {
-            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-            accordionContent.style.paddingTop = '1.5rem';
-            accordionContent.style.paddingBottom = '1.5rem';
-        } else {
-            accordionContent.style.maxHeight = '0';
-            accordionContent.style.paddingTop = '0';
-            accordionContent.style.paddingBottom = '0';
-        } 
-    });
-});
-</script>
+<script src="assets/js/newspage.js"></script>
 </body>
 </html>
