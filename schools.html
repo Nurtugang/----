@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakarim University - Современное образование</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/content.css">
+    <link rel="stylesheet" href="assets/css/schools.css">
+</head>
+<body>
+<!-- Оригинальная шапка сайта -->
+<header class="site-header">
+    <div class="header-container">
+        <!-- Menu toggle button (left) -->
+        <div class="menu-toggle-container">
+            <button id="menuToggle" class="menu-toggle">
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Logo (center) -->
+        <div class="logo-container">
+            <a href="#" class="logo">
+                <img src="assets/img/university.png" alt="Shakarim University Logo" class="logo-img">
+            </a>
+        </div>
+        
+        <!-- Search bar (right) + Language selector -->
+        <div class="search-container">
+            <form id="searchForm" action="" method="get">
+                <input type="text" name="s" placeholder="Поиск..." aria-label="Поиск">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div style="width:18px;"></div>
+            <div class="lang-selector">
+                <a href="#" class="lang-btn active">RU</a>
+                <div class="lang-dropdown">
+                    <a href="#" class="lang-btn">KZ</a>
+                    <a href="#" class="lang-btn">EN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main dropdown menu -->
+    <div id="mainMenu" class="main-menu">
+        <div class="menu-container">
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-university"></i> О нас</h3>
+                    <ul>
+                        <li><a href="#">Об университете</a></li>
+                        <li><a href="#">Наша история</a></li>
+                        <li><a href="#">Организационная структура</a></li>
+                        <li><a href="#">Руководство университета</a></li>
+                        <li><a href="#">Государственные закупки</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-user-graduate"></i> Поступление</h3>
+                    <ul>
+                        <li><a href="#">Абитуриентам</a></li>
+                        <li><a href="#">Как подать документы</a></li>
+                        <li><a href="#">Необходимые документы</a></li>
+                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                        <li><a href="#">Важные даты</a></li>
+                        <li><a href="#">Для иностранных студентов</a></li>
+                        <li><a href="#">Финансовая помощь и стипендии</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-graduation-cap"></i> Образование</h3>
+                    <ul>
+                        <li><a href="#">Высшие/Исследовательские школы</a></li>
+                        <li><a href="#">Образовательные программы</a></li>
+                        <li><a href="#">Международные программы</a></li>
+                        <li><a href="#">Академическая поддержка</a></li>
+                        <li><a href="#">Академический календарь</a></li>
+                        <li><a href="#">Студенты по обмену</a></li>
+                        <li><a href="#">Курсы для профессионалов</a></li>
+                        <li><a href="#">Университетский колледж</a></li>
+                        <li><a href="#">Shakarim High School</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-flask"></i> Исследования</h3>
+                    <ul>
+                        <li><a href="#">Научные центры</a></li>
+                        <li><a href="#">Научные проекты и новости</a></li>
+                        <li><a href="#">Научные мероприятия</a></li>
+                        <li><a href="#">Научные журналы</a></li>
+                        <li><a href="#">Студенческая наука</a></li>
+                        <li><a href="#">Научные государственные закупки</a></li>
+                        <li><a href="#">Маркет инноваций</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-handshake"></i> Сотрудничество</h3>
+                    <ul>
+                        <li><a href="#">Центр международного сотрудничества</a></li>
+                        <li><a href="#">Зарубежные партнеры</a></li>
+                        <li><a href="#">Отечественные партнеры</a></li>
+                        <li><a href="#">Карьерные возможности</a></li>
+                        <li><a href="#">Организации-партнеры по стажировкам</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-users"></i> Жизнь в кампусе</h3>
+                    <ul>
+                        <li><a href="#">Студенческая жизнь</a></li>
+                        <li><a href="#">Ресурсы и услуги кампуса</a></li>
+                        <li><a href="#">Shakarim TOP-100</a></li>
+                        <li><a href="#">Календарь событий</a></li>
+                        <li><a href="#">Выпускникам</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="menu-column">
+                <div class="menu-category">
+                    <h3><i class="fas fa-award"></i> Советы и признание</h3>
+                    <ul>
+                        <li><a href="#">Ученый Совет университета</a></li>
+                        <li><a href="#">Научно – технический совет</a></li>
+                        <li><a href="#">Академический совет университета</a></li>
+                        <li><a href="#">Диссертационный совет</a></li>
+                        <li><a href="#">Соискатели ученых званий</a></li>
+                        <li><a href="#">Лучший преподаватель вуза</a></li>
+                        <li><a href="#">Совет молодых ученых</a></li>
+                        <li><a href="#">Аккредитация и рейтинги</a></li>
+                    </ul>
+                </div>
+                
+                <div class="menu-category">
+                    <h3><i class="fas fa-camera"></i> Познакомьтесь с университетом</h3>
+                    <ul>
+                        <li><a href="https://tury.semgu.kz/7%20%d0%ba%d0%be%d1%80%d0%bf%d1%83%d1%81/">Виртуальный тур</a></li>
+                        <li><a href="#">Shakarim Museum</a></li>
+                        <li><a href="#">Фотогалерея</a></li>
+                        <li><a href="#">Библиотека</a></li>
+                        <li><a href="#">Новости университета</a></li>
+                        <li><a href="#">Брошюры и материалы</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- HTML структура для замены существующей разметки -->
+<main class="page-wrapper">
+    <div class="content-container">
+        <!-- Баннер страницы -->
+        <div class="page-banner">
+            <img src="http://c.shakarim.kz/img/building.webp" alt="Студенты в кампусе Shakarim University">
+            <div class="banner-overlay">
+                <div class="banner-content">
+                    <h1>Высшие/Исследовательские школы</h1>
+                    <p>Инновационные образовательные центры, формирующие будущих профессионалов и научных лидеров.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основная сетка контента -->
+        <div class="content-grid">
+            <!-- Боковая навигация -->
+            <aside class="sidebar-nav">
+                <ul>
+                    <!-- Обратите внимание на класс 'active' -->
+                    <li><a href="#" class="active">Высшие/Исследовательские школы</a></li>
+                    <li><a href="#">Образовательные программы</a></li>
+                    <li><a href="#">Международные программы</a></li>
+                    <li><a href="#">Академическая поддержка</a></li>
+                    <li><a href="#">Академический календарь</a></li>
+                    <li><a href="#">Студенты по обмену</a></li>
+                    <li><a href="#">Курсы для профессионалов</a></li>
+                    <li><a href="#">Университетский колледж</a></li>
+                    <li><a href="#">Shakarim High School</a></li>
+                </ul>
+            </aside>
+            
+            <!-- Основной контент -->
+            <div class="main-content">
+                <!-- Контент из админки теперь наполнен для примера -->
+                <div class="tiptap-content">
+                    <!-- Карточки исследовательских школ -->
+                    <div class="schools-cards">
+                        <!-- School 1 -->
+                        <div class="school-card">
+                            <div class="school-card__left">
+                                <img src="assets/img/template.png" alt="Декан" class="school-card__img">
+                                <div class="school-card__decan-info">
+                                    <div class="school-card__decan-name">Нұрымхан Гүлнұр Несіптайқызы</div>
+                                    <div class="school-card__decan-title">Декан</div>
+                                </div>
+                            </div>
+                            <div class="school-card__right">
+                                <div class="school-card__title">ИССЛЕДОВАТЕЛЬСКАЯ ШКОЛА ПИЩЕВОЙ ИНЖЕНЕРИИ</div>
+                                <div class="school-card__contacts">
+                                    <div><i class="fas fa-phone"></i> 87083677237</div>
+                                    <div><i class="fas fa-envelope"></i> engineering_research_school@shakarim.kz</div>
+                                    <div><i class="fab fa-instagram"></i> shakarim.ishpi</div>
+                                </div>
+                                <div class="school-card__stats">
+                                    <div class="stat"><i class="fas fa-user-graduate"></i><span>263</span><span>Обучающихся</span></div>
+                                    <div class="stat"><i class="fas fa-chalkboard-teacher"></i><span>34</span><span>ППС</span></div>
+                                    <div class="stat"><i class="fas fa-book"></i><span>10</span><span>ОП</span></div>
+                                    <div class="stat"><i class="fas fa-university"></i><span>3</span><span>Кафедр</span></div>
+                                </div>
+                                <div class="school-card__more">
+                                    <a href="#" class="more-button">Подробнее <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- School 2 -->
+                        <div class="school-card">
+                            <div class="school-card__left">
+                                <img src="assets/img/template.png" alt="Декан" class="school-card__img">
+                                <div class="school-card__decan-info">
+                                    <div class="school-card__decan-name">Сулейменов Шынгыс Кайратович</div>
+                                    <div class="school-card__decan-title">Декан</div>
+                                </div>
+                            </div>
+                            <div class="school-card__right">
+                                <div class="school-card__title">ИССЛЕДОВАТЕЛЬСКАЯ ШКОЛА ВЕТЕРИНАРИИ И СЕЛЬСКОГО ХОЗЯЙСТВА</div>
+                                <div class="school-card__contacts">
+                                    <div><i class="fas fa-phone"></i> +7 7787774434</div>
+                                    <div><i class="fas fa-envelope"></i> vet_agriculture_research@shakarim.kz</div>
+                                    <div><i class="fab fa-instagram"></i> shakarim_vaa_rsh</div>
+                                </div>
+                                <div class="school-card__stats">
+                                    <div class="stat"><i class="fas fa-user-graduate"></i><span>705</span><span>Обучающихся</span></div>
+                                    <div class="stat"><i class="fas fa-chalkboard-teacher"></i><span>46</span><span>ППС</span></div>
+                                    <div class="stat"><i class="fas fa-book"></i><span>11</span><span>ОП</span></div>
+                                    <div class="stat"><i class="fas fa-university"></i><span>2</span><span>Кафедр</span></div>
+                                </div>
+                                <div class="school-card__more">
+                                    <a href="#" class="more-button">Подробнее <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- School 3 -->
+                        <div class="school-card">
+                            <div class="school-card__left">
+                                <img src="assets/img/template.png" alt="Декан" class="school-card__img">
+                                <div class="school-card__decan-info">
+                                    <div class="school-card__decan-name">КАБДРАХИМОВА ГАУХАР ДАНИЛОВНА</div>
+                                    <div class="school-card__decan-title">Декан</div>
+                                </div>
+                            </div>
+                            <div class="school-card__right">
+                                <div class="school-card__title">ИССЛЕДОВАТЕЛЬСКАЯ ШКОЛА ФИЗИЧЕСКИХ И ХИМИЧЕСКИХ НАУК</div>
+                                <div class="school-card__contacts">
+                                    <div><i class="fas fa-phone"></i> +77473123013</div>
+                                    <div><i class="fas fa-envelope"></i> phys_chem_research_school@shakarim.kz</div>
+                                    <div><i class="fab fa-instagram"></i> shakarim.fizhim</div>
+                                </div>
+                                <div class="school-card__stats">
+                                    <div class="stat"><i class="fas fa-user-graduate"></i><span>380</span><span>Обучающихся</span></div>
+                                    <div class="stat"><i class="fas fa-chalkboard-teacher"></i><span>27</span><span>ППС</span></div>
+                                    <div class="stat"><i class="fas fa-book"></i><span>10</span><span>ОП</span></div>
+                                    <div class="stat"><i class="fas fa-university"></i><span>2</span><span>Кафедр</span></div>
+                                </div>
+                                <div class="school-card__more">
+                                    <a href="#" class="more-button">Подробнее <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Футер с оригинальной структурой -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-grid">
+            <!-- Первая колонка -->
+            <div class="footer-brand">
+                <h3>Нормативные документы</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Корпоративное управление</a></li>
+                    <li><a href="#">Корпоративные документы</a></li>
+                    <li><a href="#">Академическая политика</a></li>
+                    <li><a href="#">Внутренняя система качества</a></li>
+                    <li><a href="#">Утверждённые формы дипломов</a></li>
+                    <li><a href="#">Организация ветеранов</a></li>
+                    <li><a href="#">Ассоциация выпускников</a></li>
+                    <li><a href="#">Устойчивое развитие</a></li>
+                    <li><a href="#">Профсоюз</a></li>
+                    <li><a href="#">Университет без коррупции</a></li>
+                </ul>
+            </div>
+            
+            <!-- Вторая колонка -->
+            <div class="footer-section">
+                <h4>Полезные ссылки</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Minor</a></li>
+                    <li><a target="_blank" href="https://mooc.semgu.kz/">MOOC</a></li>
+                    <li><a href="#">Summer Semester</a></li>
+                    <li><a target="_blank" href="https://platonus.shakarim.kz/">Platonus</a></li>
+                    <li><a target="_blank" href="https://hub.shakarim.kz/">Shakarim Hub</a></li>
+                </ul>
+            </div>
+            
+            <!-- Третья колонка -->
+            <div class="footer-section">
+                <h4>Университет</h4>
+                <ul class="footer-links">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Руководство</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <!-- Четвертая колонка -->
+            <div class="footer-section">
+                <h4>Контакты</h4>
+                <ul class="footer-links">
+                    <li>г. Семей, ул. Глинки, 20А</li>
+                    <li>+7 (7222) 31-60-29</li>
+                    <li>info@shakarim.edu.kz</li>
+                    <li>Приемная: +7 (771) 365-46-25</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Shakarim University. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Мобильное меню backdrop -->
+<div class="mobile-menu-backdrop"></div>
+
+<script src="assets/js/base.js"></script>
+<script src="assets/js/index.js"></script>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/schools.js"></script>
+<script>
+// Простой скрипт для работы аккордеона
+document.querySelectorAll('.accordion-button').forEach(button => {
+    button.addEventListener('click', () => {
+        const accordionContent = button.nextElementSibling;
+        button.classList.toggle('active');
+
+        if (button.classList.contains('active')) {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+            accordionContent.style.paddingTop = '1.5rem';
+            accordionContent.style.paddingBottom = '1.5rem';
+        } else {
+            accordionContent.style.maxHeight = '0';
+            accordionContent.style.paddingTop = '0';
+            accordionContent.style.paddingBottom = '0';
+        } 
+    });
+});
+</script>
+</body>
+</html>
